@@ -6,7 +6,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b bg-white/80 dark:bg-gray-950/80 backdrop-blur-md">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
-        <Link href="/" className="font-semibold">
+        <Link href="/" className="font-semibold text-xl">
           <span className="yips-gradient-text">yips</span><span className="text-yips-blue">.dev</span>
         </Link>
 
