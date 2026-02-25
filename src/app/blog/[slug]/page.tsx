@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getAllPostSlugs, getPostData } from '@/lib/posts'
+import { GradientText } from '@/components/GradientText'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -50,11 +51,11 @@ export default async function PostPage({ params }: Props) {
           Blog
         </Link>
 
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 tracking-tight mb-3">
-          {post.title}
+        <h1 className="text-3xl font-bold tracking-tight mb-3">
+          <GradientText>{post.title}</GradientText>
         </h1>
 
-        <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-500">
+        <div className="flex items-center gap-2 text-sm text-yips-blue">
           <time dateTime={post.date}>{formatDate(post.date)}</time>
           {post.tags.length > 0 && (
             <>

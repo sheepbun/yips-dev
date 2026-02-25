@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { getSortedPostsData } from '@/lib/posts'
 import { PostCard } from '@/components/PostCard'
+import { GradientText } from '@/components/GradientText'
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -12,8 +13,8 @@ export default function BlogPage() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8 tracking-tight">
-        Blog
+      <h1 className="text-2xl font-bold mb-8 tracking-tight">
+        <GradientText>{'Blog'}</GradientText>
       </h1>
 
       {posts.length === 0 ? (

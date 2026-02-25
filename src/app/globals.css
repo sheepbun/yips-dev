@@ -33,3 +33,34 @@
     @apply prose-pre:bg-gray-950 dark:prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-800;
   }
 }
+
+/* Yips app palette — gradient utilities (unlayered for highest cascade priority) */
+.yips-gradient-text,
+.yips-hero-title {
+  background: linear-gradient(135deg, #ff1493 0%, #ffe135 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.prose-blog p,
+.prose-blog li,
+.prose-blog h1,
+.prose-blog h2,
+.prose-blog h3,
+.prose-blog h4,
+.prose-blog blockquote {
+  background: linear-gradient(135deg, #ff1493 0%, #ffe135 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Gradient border via 1px-padding wrapper */
+.yips-install-outer {
+  background: #1f2937; /* gray-800 — light mode border */
+}
+
+.dark .yips-install-outer {
+  background: linear-gradient(90deg, #ff1493, #ffe135);
+}
