@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     default: 'yips.dev',
     template: '%s · yips.dev',
   },
-  description: 'Thoughts on code and tech.',
+  description: 'Local Personal Assistant, Code Editor, and Self-Hosted Gateway.',
   openGraph: {
     title: 'yips.dev',
-    description: 'Thoughts on code and tech.',
+    description: 'Local Personal Assistant, Code Editor, and Self-Hosted Gateway.',
     url: 'https://yips.dev',
     siteName: 'yips.dev',
     type: 'website',
