@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  .dark {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100;
+    @apply antialiased;
+  }
+
+  * {
+    @apply border-gray-200 dark:border-gray-800;
+  }
+}
+
+@layer components {
+  .prose-blog {
+    @apply prose prose-gray dark:prose-invert max-w-none;
+    @apply prose-headings:font-semibold prose-headings:tracking-tight;
+    @apply prose-a:text-indigo-500 prose-a:no-underline hover:prose-a:underline;
+    @apply prose-code:text-indigo-400 prose-code:bg-gray-100 dark:prose-code:bg-gray-900 prose-code:rounded prose-code:px-1 prose-code:py-0.5;
+    @apply prose-pre:bg-gray-950 dark:prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-800;
+  }
+}
